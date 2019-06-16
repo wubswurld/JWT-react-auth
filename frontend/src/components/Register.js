@@ -61,12 +61,7 @@ class Register extends Component {
             <h2 style={{marginBottom: '40px'}}>Registration</h2>
             <form onSubmit={ this.handleSubmit }>
                 <div className="form-group">
-                    <input
-                    type="text"
-                    placeholder="Name"
-                    className={classnames('form-control form-control-lg', {
-                        'is-invalid': errors.name
-                    })}
+                    <input type="text" placeholder="Name" className={classnames('form-control form-control-lg', {'is-invalid': errors.name})}
                     name="name"
                     onChange={ this.handleInputChange }
                     value={ this.state.name }
